@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gothic Walks | Guide Application</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital@0;1&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top, #2a2a2a 0%, #121212 50%, #090909 100%);
+      color: #f2ede4;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #ddd4c6;
+    }
+
+    .bullet {
+      padding: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .form-box {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #efe4d0;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #cfc4b3;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div>
+      <div style="letter-spacing:3px; font-size:12px; margin-bottom:10px;">GOTHIC WALKS</div>
+
+      <h1>
+        TELL BETTER STORIES.<br>
+        GET PAID FOR IT.
+      </h1>
+
+      <div class="tagline">
+        Savannah Ghost Tours, Reimagined
+      </div>
+
+      <div class="bullet">Set your own schedule</div>
+      <div class="bullet">Keep more of what you earn</div>
+      <div class="bullet">No scripts. No micromanaging</div>
+      <div class="bullet">Smaller groups. Better experience</div>
+      <div class="bullet">Ground floor opportunity</div>
+
+      <p class="small">
+        We’re looking for strong personalities. Guides, bartenders, storytellers.  
+        If you can hold a crowd, we want to talk.
+      </p>
+
+      <p class="small" style="font-style:italic;">
+        Not your average ghost tour. Definitely not your average boss.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="form-box">
+      <h2>Apply to Guide</h2>
+      <p class="small">Fill this out and we’ll reach out.</p>
+
+      <form action="https://formspree.io/f/xzzgqdyy" method="POST">
+        
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Phone</label>
+        <input type="tel" name="phone" required>
+
+        <label>How long have you been doing ghost tours?</label>
+        <select name="experience" required>
+          <option value="">Select one</option>
+          <option>None yet</option>
+          <option>Pretty new to it</option>
+          <option>Over 6 months</option>
+          <option>One-Three years</option>
+          <option>More than three years</option>
+          <option>Since the dawn of time</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
