@@ -60,7 +60,7 @@
       border: 1px solid rgba(255,255,255,0.1);
     }
 
-    input, select {
+   input, select {
       width: 100%;
       padding: 12px;
       margin-top: 5px;
@@ -68,7 +68,8 @@
       border-radius: 6px;
       border: none;
       font-size: 16px;
-    }
+      box-sizing: border-box; /* 👈 THIS FIXES IT */
+}
 
     button {
       width: 100%;
