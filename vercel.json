@@ -4,6 +4,11 @@
       "source": "/marshallhouse",
       "destination": "https://bookeo.com/gothicwalks?type=4155377NHNJ19D3FDC57F8&source=marshallhouse",
       "permanent": false
+    },
+    {
+      "source": "/book",
+      "destination": "/bookeo-booking.html",
+      "permanent": false
     }
   ]
 }
